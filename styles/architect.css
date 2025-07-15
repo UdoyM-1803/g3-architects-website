@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 /* Shared Styles......................... */
 .display-flex {
-  display: flex;
+    display: flex;
 }
 
 .text-primary {
@@ -42,7 +42,7 @@ main {
     margin: 0 auto;
 }
 
-main > section {
+main>section {
     margin-top: 130px;
 }
 
@@ -78,7 +78,8 @@ main > section {
     font-weight: 500;
 }
 
-.navbar, .banner {
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -97,7 +98,8 @@ main > section {
 }
 
 .banner-image {
-    width: 100%;;
+    width: 100%;
+    ;
 }
 
 
@@ -197,7 +199,7 @@ main > section {
 }
 
 .fact-number {
-    font-size: 2,8rem;
+    font-size: 2, 8rem;
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -214,19 +216,37 @@ main > section {
 }
 
 
+/* footer section................................ */
+footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 140px;
+    height: 100px;
+    border-radius: 8px;
+    background-color: rgb(255, 244, 231);
+}
+
+.footer-title {
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* Resposive Media query .......................... */
 @media screen and (max-width: 576px) {
-    .navbar, 
+
+    .navbar,
     .features,
-    .nav-links, 
+    .nav-links,
     .teams {
         flex-direction: column;
     }
 
-    .team-img-container, 
+    .team-img-container,
     .facts-container,
-    .sponsor-companies 
-    {
+    .sponsor-companies {
         grid-template-columns: 1fr;
     }
 
@@ -252,15 +272,18 @@ main > section {
 
 /* Medium Size device ........................... */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams, .features {
+
+    .teams,
+    .features {
         flex-direction: column;
     }
-    
+
     .our-features {
         margin: 50px auto;
     }
 
-    .sponsor-companies, .facts-container {
+    .sponsor-companies,
+    .facts-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         justify-items: center;
